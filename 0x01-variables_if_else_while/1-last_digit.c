@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
- * main - Entry
- * Return: Always 0
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
  */
-int main (void)
+int main(void)
 {
 	int n;
-	int a;
+	int last;
 
-	srand(time(o));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last = n % 10;
 	if (last > 5)
