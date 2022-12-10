@@ -1,4 +1,4 @@
-#include <stdio.hi>
+#include <stdio.h>
 /* more header gets there */
 
 /* betty style doc for function main gets there */
