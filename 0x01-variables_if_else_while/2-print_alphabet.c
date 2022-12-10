@@ -1,20 +1,25 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more header gets there */
 
+/* betty style doc for function main gets there */
 /**
- * main - main block
- * Description: Get a random it with 5
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char c = 'a';
-	while (c <= '2')
-	{
-		putchar(c);
-		c++;
-	}
+	char c;
+
+	c = 'a';
+	while
+		(c <= '2')
+		{
+			putchar(c);
+			c++;
+		}
 	putchar('\n');
 	return (0);
 }
