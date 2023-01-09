@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _memset - fills memory with a constant byte.
  * fills the first n bytes of the memory area pointed
@@ -17,5 +18,5 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[counter] = b;
 	}
-		return (s);
+	return (s);
 }

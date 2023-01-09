@@ -1,20 +1,21 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * _atoi - function converts string to an integer
- * @s: Pointer parameter
- * Return: returns an integer value
+ * _atoi - converts a string to an integer.
+ * @s: input string.
+ * Return: integer.
  */
 int _atoi(char *s)
 {
-	unsigned int count = 0, size = 0, j = 0, k = 1, m = 1, i;
+	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
 	while (*(s + count) != '\0')
 	{
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
 		if (*(s + count) == '-')
-			k *= -1;
+			pn *= -1;
+
 		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 		{
 			if (size > 0)
@@ -23,10 +24,11 @@ int _atoi(char *s)
 		}
 		count++;
 	}
+
 	for (i = count - size; i < count; i++)
 	{
-		j = j + ((*(s + i) - 48) * m);
+		oi = oi + ((*(s + i) - 48) * m);
 		m /= 10;
 	}
-	return (j * k);
+	return (oi * pn);
 }
